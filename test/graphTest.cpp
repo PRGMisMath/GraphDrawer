@@ -5,13 +5,13 @@
 /*
 
 Structure du projet :
- - Système de graphe
-   - Stockage en tant que donnée (position exacte VS graphe pure)	XXXXXXXXXX (sauf pondération)
-   - Sauvegarde et chargement en mémoire							__________
+ - SystÃ¨me de graphe
+   - Stockage en tant que donnÃ©e (position exacte VS graphe pure)	XXXXXXXXXX (sauf pondÃ©ration)
+   - Sauvegarde et chargement en mÃ©moire							__________
    - Dessin															__________
- - Système d'interface
+ - SystÃ¨me d'interface
    - Gestion du menu												__________
-   - Ajout de sommet et d'arête et de label							__________
+   - Ajout de sommet et d'arÃªte et de label							__________
 
 */
 
@@ -35,7 +35,7 @@ int main() {
 				graph.addEdge(nodes[i], nodes[j]);
 			}
 
-	std::cout << "\nAjout des arêtes : " << graph;
+	std::cout << "\nAjout des arÃªtes : " << graph;
 
 
 	for (int i = 0; i < 20; ++i)
@@ -44,7 +44,7 @@ int main() {
 				graph.supprEdge(nodes[i], nodes[j]);
 			}
 
-	std::cout << "\nSuppression des arêtes : " << graph;
+	std::cout << "\nSuppression des arÃªtes : " << graph;
 
 	for (int i = 0; i < 20; ++i)
 		if (((6 * i * i * i - 2 * i + 1) % 3) == 2) {
@@ -55,7 +55,7 @@ int main() {
 
 	graph.addEdge(graph.addVertice(666), nodes[0]);
 
-	std::cout << "\nTest de la défragmentation et de la réallocation : " << graph;
+	std::cout << "\nTest de la dÃ©fragmentation et de la rÃ©allocation : " << graph;
 
 	return 0;
 }
